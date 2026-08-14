@@ -164,8 +164,50 @@ label call_accepted:
     "It's still 2:47."
     "'Yeah.. fuck this-'"
     "You go back to working on your project."
-    "'This.. is all just some weird paranormal shit.' You mutter to yourself"
+    "'I'm just fucking tired..' You mutter to yourself."
+    "You click back onto your presentation."
+    "You stare at the same slide you've been working on "
+    "You reread the same sentence."
+    "It still doesn't make sense."
+    "You blink."
+    "Your read it again."
+    " "
+    "You finally make a few changes."
+    "Delete."
+    "Type."
+    "Delete."
+    "Type."
 
+    "2:48 AM."
+
+    "You sigh."
+    "'Okay'"
+    "'One more slide.'"
+    "'Should.. I..'"
+
+    menu:
+        "Keep working":
+            jump keep_working
+
+        "Check the call:":
+            jump check_call
+
+        "Get some water":
+            jump get_water
+
+label keep_working:
+
+
+
+label check_call:
+
+
+
+label get_water:
+
+
+
+#DECLINED PATH (for the sake of my organization)
 label call_declined
 
 
