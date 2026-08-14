@@ -1,4 +1,5 @@
-﻿define p = Character("Player", color="#860000")
+﻿#Remember this is the Github Desktop file, NOT the rpy one!
+define p = Character("Player", color="#860000")
 define alt = Character("Alternate Player", color="#810000")
 default snack_choice = None
 
@@ -117,6 +118,62 @@ label wait_for_food:
     "."
     "."
     "Unknown number."
+    $ call_choice = renpy.call_screen("phone_call")
+
+    if call_choice == "answer":
+        stop sound "phone_ringing.ogg"
+        "You answer the phone."
+        a "Aaliyah?"
+        p "Who is this?"
+        a "Listen. I'm you."
+        p "ex-excuse me?"
+        a "Do NOT let the time hit 3:00 AM."
+        p "What do-"
+        "The call disconnects."
+        jump call_accepted
+
+    elif f call_choice == "decline":
+        stop sound "phone_ringing.ogg"
+        "You decline the call."
+        "The phone stops ringing."
+        "You glance at the clock again."
+        "2:47 AM"
+        "'Just another spam caller..'"
+        "'I need to focus.'"
+        "You go back to work."
+        jump call_declined
+
+screen phone_call():
+    timer 5.0 action Return("decline")
+
+    vbox
+        textbutton "Answer" action Return("answer")
+        textbutton "Decline" action Return("decline")
+
+
+label call_accepted:
+    "You stare at your phone."
+    "That was my voice."
+    "."
+    "."
+    "."
+    "'No.'"
+    "'I'm just tired.'"
+    "You set your phone back down."
+    "You glance at the clock once again."
+    "It's still 2:47."
+    "'Yeah.. fuck this-'"
+    "You go back to working on your project."
+    "'This.. is all just some weird paranormal shit.' You mutter to yourself"
+
+label call_declined
+
+
+
+
+
+
+
 
 label store_run:
     "TBD!"
