@@ -83,10 +83,46 @@ label start:
 
 #YAY! FIRST BIG BREAKING POINT IN THE CODE~
 label food_order:
+    "I'm hungry.."
+    "You pick up your phone to order some food."
+    "Should.. I order.. or go to the store..?" #Super secret (not rlly) secret "Escape" option? maybe? idk
+    menu:
+        "Order food":
+            "You decide to order some pizza and wings."
+            "The little app on your phone says it's being prepared."
+            jump wait_for_food
+        "Go to the store":
+            jump store_run
 
+label wait_for_food:
+    "You decide to check the clock one more time before going back to work."
+    "2:46 AM"
+    "'Ah fuck this.' And back to work you go."
+    "You hear something on the carpet approaching your room.."
+    "Like someone's walking towards it.."
+    "'Mom..?'"
+    "You call out to your mom, but she doesn't respond."
+    "Probably because she's not supposed to be home"
+    "You hear the sound of the door creaking open.."
+    "your husky, Winter is standing in the doorway, looking at you."
+    "'Jesus Winter! You can't just do that!'"
+    "Winter tilts her head at you, like she's confused."
+    "You sigh again, and reach into the box of treats by your desk."
+    "'Why are you even awake?'"
+    "You hand the treat to Winter, and give her very generous rubs."
+    "She always seems to know when something's wrong~"
+    "Then.."
+    play sound "phone_ringing.ogg"
+    "."
+    "."
+    "."
+    "Unknown number."
 
-
+label store_run:
+    "TBD!"
 
 label back_to_work:
+    "Welcome to where this doesn't work yet."
+    "Sorry, not sorry! heh"
 
     return
