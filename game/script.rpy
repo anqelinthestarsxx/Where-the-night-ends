@@ -371,6 +371,131 @@ label delete_slide:
     "You deleted it."
     "And yet..."
     "It's still there."
+    menu:
+        "Delete it again":
+            jump delete_again
+        "Leave it alone":
+            jump leave_slide
+        "Take a picture of it.":
+            jump take_picture
+        "Close your laptop":
+            jump close_laptop
+
+label delete_again:
+    "You stare at the slide."
+    "'No.'"
+    "You select it again."
+    "Delete."
+    "The slide disappears."
+    "You wait."
+    "Nothing happens."
+    "'...Okay.'"
+    "You lean back in your chair."
+    "You look at the clock."
+    "2:49 AM."
+    "You let out a shaky breath."
+    "'It's gone.'"
+    "You turn at it for a moment."
+    "Then you start typing."
+    "Click."
+    "Type."
+    "Delete."
+    "Type again."
+    "You glance at the clock."
+    "2:49 AM."
+    "You continue working."
+    "."
+    "."
+    "."
+    "Click."
+    "Type."
+    "Delete."
+    "You glance at the clock again."
+    "2:49 AM."
+    "'Why isn't it moving?'"
+    "You look at your phone."
+    "2:49 AM."
+    "You look at your computer."
+    "2:49 AM."
+    "You look at the clock."
+    "2:49AM."
+    "You wait."
+    "Nothing."
+    "You keep working."
+    "You don't notice the clock change."
+    "You don't notice the room getting darker."
+    "You don't notice your computer screen flicker."
+    "Until you hear it."
+    play sound "notification.ogg"
+    "You look down."
+    "A new slide has appeared."
+    "Slide 13 of 12."
+    "You freeze."
+    "The words are different this time."
+    "'You already tried this.'"
+    "."
+    "."
+    "."
+    "The clock changes."
+    "2:50 AM."
+    "You stare at the screen."
+    "."
+    "."
+    "."
+    "'..What?'"
+    "Your computer goes black."
+    "You look at your reflection in the screen."
+    "She's staring back at you."
+    "But she's smiling."
+    "You don't remember smiling."
+    play sound "phone_ringing.ogg"
+    "You hear your phone ringing."
+    "Unknown number."
+    "You don't answer."
+    stop sound "phone_ringing.ogg"
+    "The ringing stops."
+    "."
+    "."
+    "."
+    play sound "phone_ringing.ogg"
+    "Then it starts again."
+    "You look at the clock."
+    "2:50 AM"
+    "You realize something."
+    "The clock isn't counting forward."
+    "It's counting down."
+    "2:49."
+    "2:48."
+    "2:47."
+    "You stare at the numbers."
+    "'No.'"
+    "2:46."
+    "2:45."
+    "2:44."
+    "You reach for your phone."
+    "The screen goes black."
+    "."
+    "."
+    "."
+    "3:00 AM."
+
+    scene black
+    "ENDING #1"
+    "COUNTDOWN"
+    "You tried to erase it."
+    "But some things aren't meant to be deleted."
+    "CODE: 24913"
+    return
+    
+
+label leave_slide:
+
+label take_picture:
+
+label close_laptop:
+
+
+
 
 label read_slide:
 
