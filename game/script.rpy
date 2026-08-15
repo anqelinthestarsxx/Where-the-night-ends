@@ -328,6 +328,55 @@ label keep_working:
     "You turn back to your computer."
     "slide 13 of 12."
     "It's back."
+    menu:
+        "Delete the slide":
+            jump delete_slide
+        "Read the slide again":
+            jump read_slide
+        "Close the presentation":
+            jump close_presentation
+        "Call the number back":
+            jump call_back
+
+label delete_slide:
+    "You stare at the slide."
+    "'Nope.'"
+    "You click the slide."
+    "You select everything."
+    "Delete."
+    "The slide disappears."
+    "You stare at the presentation."
+    "Slide 12 of 12."
+    "'okay.'"
+    "You lean back in your chair."
+    "You let out a long sigh."
+    "'I'm seriously losing it.'"
+    "You take another sip of your Monster."
+    "You turn back toward your computer."
+    "."
+    "."
+    "."
+    "You hear a faint clicking sound."
+    "Click."
+    "Click."
+    "Click."
+    "You look at your computer."
+    "Slide 13 of 12."
+    "You freeze."
+    "'No.'"
+    "You click on the slide."
+    "Don't let it reach 3."
+    "You didn't type it."
+    "You didn't copy it."
+    "You deleted it."
+    "And yet..."
+    "It's still there."
+
+label read_slide:
+
+label close_presentation:
+
+label call_back:
 
 
 label check_call:
